@@ -1,0 +1,17 @@
+.wrapper {
+  /* flex-basis: 35%; */
+  width: 400px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: none;
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.element {
+  width: 100%;
+  margin-top: 20px;
+}

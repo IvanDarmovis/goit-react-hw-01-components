@@ -1,0 +1,33 @@
+.wrapper {
+  font-family: 'Roboto', sans-serif;
+  text-transform: none;
+  text-align: center;
+  border: 1px solid #ccc;
+  flex-basis: 80%;
+}
+
+.history {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.head {
+  background-color: cyan;
+}
+
+.odd {
+  background-color: bisque;
+}
+
+.even {
+  background-color: aquamarine;
+}
+
+th,
+td {
+  min-width: 33%;
+  text-align: justify;
+  padding-left: 10%;
+  border: 1px solid grey;
+}

@@ -1,15 +1,17 @@
 .wrapper {
-  width: 400px;
-  height: 500px;
   font-family: 'Roboto', sans-serif;
   text-transform: none;
   text-align: center;
-  border: 1px solid #ccc;
+  flex-basis: 35%;
+  height: 500px;
 }
 
 .profile {
   background-color: #fff;
   text-align: center;
+  width: 400px;
+  height: 500px;
+  margin: 0 auto;
 }
 
 p {

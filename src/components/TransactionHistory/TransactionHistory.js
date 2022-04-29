@@ -20,13 +20,13 @@ function TransactionHistory({ items }) {
         </thead>
 
         <tbody className={s.body}>
-          {items.map(el => {
+          {items.map(({ id, type, amount, currency }) => {
             const cls = i ? 'even' : 'odd';
             const result = (
-              <tr key={el.id} className={s[cls]}>
-                <td>{correctText(el.type)}</td>
-                <td>{el.amount}</td>
-                <td>{el.currency}</td>
+              <tr key={id} className={s[cls]}>
+                <td>{correctText(type)}</td>
+                <td>{amount}</td>
+                <td>{currency}</td>
               </tr>
             );
             i = i === 0 ? 1 : 0;

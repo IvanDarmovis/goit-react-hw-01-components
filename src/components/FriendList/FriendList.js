@@ -7,14 +7,10 @@ function FriendList({ friends }) {
     <div className={s.wrapper}>
       Fourth task
       <ul className={s.list}>
-        {friends.map(el => (
-          <div className={s.element} key={el.id}>
-            <FriendListItem
-              avatar={el.avatar}
-              name={el.name}
-              isOnline={el.isOnline}
-            />
-          </div>
+        {friends.map(({ id, avatar, name, isOnline }) => (
+          <li className={s.element} key={id}>
+            <FriendListItem avatar={avatar} name={name} isOnline={isOnline} />
+          </li>
         ))}
       </ul>
     </div>

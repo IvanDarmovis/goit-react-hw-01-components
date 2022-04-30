@@ -6,12 +6,11 @@ function color() {
 }
 
 function Statistics({ title, stats }) {
-  const mainTitle = 'Second task';
   return (
     <div className={s.wrapper}>
-      {mainTitle}
+      'Second task'
       <section className={s.statistics}>
-        <h2 className={s.title}>{title ? title : mainTitle}</h2>
+        {title && <h2 className={s.title}>{title}</h2>}
 
         <ul className={s.statList}>
           {stats.map(({ id, label, percentage }) => (
